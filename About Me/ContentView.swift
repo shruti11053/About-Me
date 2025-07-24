@@ -23,24 +23,33 @@ struct ContentView: View {
                     // Image
                     Image("art museum")
                         .resizable()
-                        .frame(width: 250, height: 310, alignment: .center)
+                        .frame(width: 300, height: 360)
+                        .cornerRadius(30.0)
                 }
                 
                 Text("Shruti Shivakumar")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundStyle(Color.black)
-                    .padding()
                 
                 // remember to change the quote
                 
-                Text("'Hell is empty and all the devils are here' - Shakespeare")
+                Text("'Want to be someone else is a waste of the person you are. - Marilyn Monroe")
                     .italic()
+                    .font(.title2)
                     .multilineTextAlignment(.center)
-                    .padding()
                 
-                Text("Shruti is 16 years old and an incoming high school junior. She loves art, business, crocheting, reading, community service, and music. She is also a passionate feminist. She aims to become a CEO of a company and live in a victorian mansion with her bearded dragon and chameleon.")
-                    .font(.title3)
+                ZStack() {
+                    Color.lightPink
+                        .cornerRadius(20)
+                    Text("Shruti is 16 years old and an incoming high school junior. She loves art, business, crocheting, reading, community service, sci-fi, feminism, and music. She hopes to study economics and art history. She aims to become a CEO of a company and live in a victorian mansion with her bearded dragon and chameleon.")
+                        .font(.title3)
+                        .cornerRadius(11)
+                        .multilineTextAlignment(.center)
+                        
+                }
+                .frame(width: 360, height: 250)
+                    
             }
             
             
@@ -50,12 +59,9 @@ struct ContentView: View {
         
         
         .padding()
-        
-        
-        
-        
-        
-        
+        .background()
+            .ignoresSafeArea()
+    
     }
 }
 
