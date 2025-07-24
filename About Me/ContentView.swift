@@ -23,7 +23,7 @@ struct ContentView: View {
                     // Image
                     Image("art museum")
                         .resizable()
-                        .frame(width: 300, height: 360)
+                        .frame(width: 300, height: 365)
                         .cornerRadius(30.0)
                 }
                 
