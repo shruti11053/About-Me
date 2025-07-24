@@ -13,7 +13,7 @@ struct ContentView: View {
         // also find out how to get the color full
         
         ZStack {
-            RadialGradient(colors: [Color("lightGreen"), Color("lightPink")], center: .topLeading, startRadius: 999, endRadius: 111)
+            RadialGradient(colors: [Color("lightGreen"), Color("lightPink")], center: .topLeading, startRadius: 845, endRadius: 111)
                     .ignoresSafeArea()
             
             
